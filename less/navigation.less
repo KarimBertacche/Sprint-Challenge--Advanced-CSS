@@ -1,1 +1,22 @@
-// Navigation code here
+// Navigation 
+.navigation-bar {
+    .desktop-layout(@nav-bg, @containerPadding);
+    .flex(center, center, column);
+
+    .heading-primary {
+        font-size: 4rem;
+        margin-bottom: 20px;
+    }
+
+    .nav-bar {
+        .flex(space-between);
+        width: 380px;
+        font-size: 1.7rem;
+        margin-bottom: 10px; 
+    
+        a {
+            text-decoration: none;
+            color: @nav-font;
+        }
+    }
+}
