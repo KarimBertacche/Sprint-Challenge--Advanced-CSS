@@ -186,14 +186,16 @@ p {
   position: fixed;
   top: 0;
   margin-left: 10.9%;
+  opacity: 0.8;
 }
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
   .navigation-bar {
     margin-left: 0%;
   }
 }
 .navigation-bar .heading-primary {
   font-size: 4rem;
+  margin-top: 10px;
   margin-bottom: 20px;
 }
 .navigation-bar .nav-bar {
