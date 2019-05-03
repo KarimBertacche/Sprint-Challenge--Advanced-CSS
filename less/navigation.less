@@ -2,6 +2,13 @@
 .navigation-bar {
     .desktop-layout(@nav-bg, @containerPadding);
     .flex(center, center, column);
+    position: fixed;
+    top: 0;
+    margin-left: 10.9%;
+
+    @media @desktop to @tablet {
+        margin-left: 0%;
+    }
 
     .heading-primary {
         font-size: 4rem;

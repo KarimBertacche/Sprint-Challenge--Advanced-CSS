@@ -183,6 +183,14 @@ p {
   align-items: center;
   flex-direction: column;
   flex-wrap: nowrap;
+  position: fixed;
+  top: 0;
+  margin-left: 10.9%;
+}
+@media (max-width: 800px) {
+  .navigation-bar {
+    margin-left: 0%;
+  }
 }
 .navigation-bar .heading-primary {
   font-size: 4rem;
@@ -201,6 +209,9 @@ p {
 .navigation-bar .nav-bar a {
   text-decoration: none;
   color: #454A59;
+}
+.home .header-img {
+  margin-top: 87px;
 }
 .home .header-img img {
   width: 100%;
@@ -324,6 +335,12 @@ p {
     cursor: pointer;
   }
 }
+.home .walk .walk-text .btn:hover {
+  animation-name: popIn;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  box-shadow: 0 10px 20px #23293B;
+}
 .home .walk .walk-img {
   width: 46%;
   margin-left: 4%;
@@ -349,4 +366,24 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+@keyframes popIn {
+  0% {
+    transform: translateY(-10px) scale(0.7);
+  }
+  20% {
+    transform: translateY(0) scale(1.1);
+  }
+  40% {
+    transform: translateY(-8px) scale(0.8);
+  }
+  60% {
+    transform: translateY(0) scale(1.05);
+  }
+  80% {
+    transform: translateY(-5px) scale(0.9);
+  }
+  100% {
+    transform: translateY(0) scale(1);
+  }
 }
