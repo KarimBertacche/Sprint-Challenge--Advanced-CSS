@@ -1,1 +1,35 @@
 // Mixins Here
+.flex(@justify: flex-start, @align: flex-start, @direction: row, @wrap: nowrap) {
+    display: flex;
+    justify-content: @justify;
+    align-items: @align;
+    flex-direction: @direction;
+    flex-wrap: @wrap;
+}
+
+.desktop-layout(@color, @padding) {
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;  
+    background-color: @color;
+    padding: @padding;
+}
+
+.custom-btn(@width: 100px, @height: 35px, @color: @btn-bg-color) { 
+    width: @width;
+    height: @height;
+    background-color: @color;
+    color: @white;
+    border: 2px solid @color;
+    border-radius: 5px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    transition: .4s;
+
+    &:hover {
+        background-color: @porcelain;
+        color: @color;
+        border: 2px solid @color;
+        cursor: pointer;
+    }
+}

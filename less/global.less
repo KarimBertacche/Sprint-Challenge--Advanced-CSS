@@ -10,6 +10,7 @@ html {
 html, body {
   font-family: 'Ubuntu', sans-serif;
   color: @main-font-color;
+  background-color: @black;
 }
 
 h1, h2, h3, h4, h5 {
@@ -31,8 +32,19 @@ p {
 }
 
 .container {
-  max-width: 800px;
-  width: 100%;
-  margin: 0 auto;  
+  .desktop-layout(@white, @containerPadding);
+
+  @media @mobile {
+    .desktop-layout(@white, 0);
+  }
+
+  .header-img {
+    margin-top: 96px;
+
+    img {
+      width: 100%;
+      min-width: 500px;
+    }
+  }
 }
 

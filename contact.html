@@ -1,0 +1,64 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>SpaceWalkers</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Russo+One|Ubuntu" rel="stylesheet">
+  <link href="css/index.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="navigation-bar">
+    <h1 class="heading-primary">SpaceWalkers</h1>
+    <nav class="nav-bar">
+      <a href="index.html" class="nav-links">Home</a>
+      <a href="about.html" class="nav-links">About Us</a>
+      <a href="#" class="nav-links">Blog</a>
+      <a href="contact.html" class="nav-links">Contact</a>
+      <a href="#" class="nav-links">Sign In</a>
+    </nav>
+  </div>
+
+  <div class="container form">
+    <header class="intro">
+      <figure class="header-img">
+        <img src="img/main-header.png" alt="main header image">
+      </figure>
+      <h2>Sign Up!</h2>
+      <p>Sign up to receive our amazing SpaceWalkers magazine, subscribe now to our newletter.</p>
+    </header>
+    <section class="form-section">
+        <form action="/" method="post">
+          <label for="name">Name:</label>
+          <input type="text" name ="name" id="name" placeholder="Your name" required><br>
+          <label for="surname">Surname:</label>
+          <input type="text" name ="surname" id="surname" placeholder="Your surname" required><br>
+          <label for="email">Email:</label>
+          <input type="email" name="email" id="email" placeholder="Your email address" required><br>
+          <label for="tel">Telephone:</label>
+          <input type="tel" name="tel" id="tel" placeholder="Your telephone number" required><br>
+          <label for="psw">Password:</label>
+          <input type="password" name ="psw" id="psw" placeholder="Insert your password" required><br>
+          <label for="Rpsw">Password:</label>
+          <input type="password" name ="Rpsw" id="Rpsw" placeholder="Repeat your password" required><br>
+          <label for="selection">What do you think of our website?</label>
+          <select name="opinion" id="selection">
+            <option value="love">I love it</option>
+            <option value="okay">It's okay</option>
+            <option value="improve">Can improve</option>
+            <option value="bad">I don't like it</option>
+          </select><br>
+          <textarea rows="6" placeholder="Leave a comment"></textarea><br>
+          <button class="submit-btn" type="submit">Submit</button>
+        </form>
+      </section>
+    <footer>
+      <p>Copyright SpaceWalkers 2019</p>
+    </footer>
+  </div>
+</body>
+</html>
